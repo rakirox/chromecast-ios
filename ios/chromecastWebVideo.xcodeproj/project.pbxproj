@@ -20,6 +20,7 @@
 		33AEF1FF5F4263F619C81850 /* libPods-chromecastWebVideo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81AF9F9A21D2EBF9D76493 /* libPods-chromecastWebVideo-tvOSTests.a */; };
 		4CE9533A10731F507C20AFAB /* libPods-chromecastWebVideo-chromecastWebVideoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D35518F0752F7367B80F1B /* libPods-chromecastWebVideo-chromecastWebVideoTests.a */; };
 		9E958E1AAA60C0C6916EB2DB /* libPods-chromecastWebVideo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB5553E795542889765DEFC /* libPods-chromecastWebVideo-tvOS.a */; };
+		F5E0FB0B24AA71EB0031BEE9 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E0FB0A24AA71EB0031BEE9 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		B60FFD2CCF8BB151B8F6F57A /* Pods-chromecastWebVideo-chromecastWebVideoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chromecastWebVideo-chromecastWebVideoTests.release.xcconfig"; path = "Target Support Files/Pods-chromecastWebVideo-chromecastWebVideoTests/Pods-chromecastWebVideo-chromecastWebVideoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F5E0FB0924AA71EB0031BEE9 /* chromecastWebVideo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = chromecastWebVideo.entitlements; path = chromecastWebVideo/chromecastWebVideo.entitlements; sourceTree = "<group>"; };
+		F5E0FB0A24AA71EB0031BEE9 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5E0FB0B24AA71EB0031BEE9 /* ExternalAccessory.framework in Frameworks */,
 				211E1E40355C27523FF8BC5C /* libPods-chromecastWebVideo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +129,7 @@
 		13B07FAE1A68108700A75B9A /* chromecastWebVideo */ = {
 			isa = PBXGroup;
 			children = (
+				F5E0FB0924AA71EB0031BEE9 /* chromecastWebVideo.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -139,6 +144,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5E0FB0A24AA71EB0031BEE9 /* ExternalAccessory.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				487DF7E0242E0E48742E1DD6 /* libPods-chromecastWebVideo.a */,
@@ -161,7 +167,6 @@
 				75A65869DCFB66B934EFDC65 /* Pods-chromecastWebVideo-tvOSTests.debug.xcconfig */,
 				0CEEDF4C02F09C05AAA38DBB /* Pods-chromecastWebVideo-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +214,7 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				BB2C4B9A1E03386A17BCE6C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +236,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				17CC03B86E27584C034E9127 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +299,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = V889JYG7AE;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -375,6 +383,26 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		17CC03B86E27584C034E9127 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chromecastWebVideo/Pods-chromecastWebVideo-resources.sh",
+				"${PODS_ROOT}/google-cast-sdk-no-bluetooth/GoogleCastSDK-ios-4.4.7_static/GoogleCast.framework/GoogleCastCoreResources.bundle",
+				"${PODS_ROOT}/google-cast-sdk-no-bluetooth/GoogleCastSDK-ios-4.4.7_static/GoogleCast.framework/GoogleCastUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastCoreResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chromecastWebVideo/Pods-chromecastWebVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +481,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB2C4B9A1E03386A17BCE6C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chromecastWebVideo-chromecastWebVideoTests/Pods-chromecastWebVideo-chromecastWebVideoTests-resources.sh",
+				"${PODS_ROOT}/google-cast-sdk-no-bluetooth/GoogleCastSDK-ios-4.4.7_static/GoogleCast.framework/GoogleCastCoreResources.bundle",
+				"${PODS_ROOT}/google-cast-sdk-no-bluetooth/GoogleCastSDK-ios-4.4.7_static/GoogleCast.framework/GoogleCastUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastCoreResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chromecastWebVideo-chromecastWebVideoTests/Pods-chromecastWebVideo-chromecastWebVideoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F96F6D2B7FBB051050E88889 /* [CP] Check Pods Manifest.lock */ = {
@@ -629,7 +677,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = chromecastWebVideo/chromecastWebVideo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V889JYG7AE;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -656,7 +706,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = chromecastWebVideo/chromecastWebVideo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V889JYG7AE;
 				INFOPLIST_FILE = chromecastWebVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

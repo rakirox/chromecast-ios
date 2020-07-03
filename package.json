@@ -12,7 +12,9 @@
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-google-cast": "^3.3.0"
+    "react-native-cheerio": "^1.0.0-rc.4",
+    "react-native-google-cast": "^3.3.0",
+    "react-native-webview": "^10.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
